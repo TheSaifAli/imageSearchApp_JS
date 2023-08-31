@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Search App</title>
+    
+    <link rel="stylesheet" href="/assets/index-8af37b96.css">
+  </head>
+  <body class="bg-[url('backgroundImage.jpg')] bg-cover bg-center bg-no-repeat h-screen">
+    <h1
+      class="my-10 text-white text-center text-2xl font-bold drop-shadow-lx lg:text-5xl" id="mainHeading"
+    >
+      <img src="" alt="">
+      Image Search App
+    </h1>
+    <div class="beforeFormDiv" id="formDiv">
+      <form
+        class="flex flex-col justify-center items-center w-[90%] gap-3 sm:w-[75%] md:w-[65%] lg:w-[50%] lg:flex-row"
+      >
+        <input
+          type="text"
+          class="w-full rounded-full font-semibold active:outline-none outline-none ring-2 ring-[#b59975] focus:outline-none focus:ring-2 
+          placeholder:text-[#726c64]/70 active:border-none active:ring-2 focus:ring-[#b59975] py-2 px-3 text-[#4f4d4b] shadow-2xl"
+          placeholder="Search images"
+          id="searchInput"
+        />
+        <button
+          id="getButton"
+          class="bg-[#726c64] font-semibold py-2 px-3 text-white
+          hover:bg-[#49433b] 
+          active:bg-[#866435] lg:hover:rounded-tl-sm lg:hover:transition-all lg:hover:duration-300 lg:hover:ease-in-out transition-all lg:hover:rounded-br-sm rounded-full text-sm lg:px-8 lg:w-[40%] shadow-2xl lg:py-1.5 lg:text-lg"
+        >
+          Get Image
+        </button>
+      </form>
+    </div>
+    <h1  id="resultMsg" class="lg:text-lg lg:mx-7 mx-3 hidden">Your Search Result: <span id="resultInput" class="font-semibold"></span></h1>
+    <div
+      id="searchResults"
+      class="grid-flow-row grid-rows-1 mx-auto my-7 w-[95%] gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 overflow-hidden"
+    >
+    </div>
+    <button
+          id="showMoreBtn"
+          class="bg-[#ccbda9] w-42 mx-auto font-semibold py-2 px-3 rounded-md text-sm active:bg-[#49433b] 
+          hover:bg-[#866435] hover:text-white lg:px-8 shadow-lg lg:py-2 lg:text-lg hidden"
+        >
+          Show More
+        </button>
+    <script src="script.js"></script>
+  </body>
+</html>

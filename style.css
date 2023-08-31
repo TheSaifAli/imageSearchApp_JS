@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    @apply scroll-smooth
+}
+.beforeFormDiv {
+  @apply absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] flex flex-col justify-center items-center w-[95%]
+}
+
+
+.afterFormDiv {
+  @apply flex flex-col justify-center mt-14 mb-6 items-center w-[95%] mx-auto
+  
+}
+.searchResult{
+    @apply rounded bg-[#f5efe8] hover:bg-[#c7c0b7] overflow-hidden  w-[100%] flex flex-col shadow-lg
+}
+
+.imageStyle{
+@apply w-[100%] h-[200px] object-cover rounded-t hover:scale-105 transition-transform ease-in-out
+}
+
+.linkStyle{
+    @apply w-[100%] font-semibold my-4 px-2 cursor-pointer
+}
